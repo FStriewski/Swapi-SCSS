@@ -1,0 +1,59 @@
+// Variables:
+$swyellow: #ffe300;
+$swgold: #ffe10083;
+$swblue: #32383e;
+$swcoal: #333333;
+$swgrey: #c3c3c3;
+$swblack: #000000;
+$swwhite: #ffffff;
+
+.detailsCardContainer {
+    float: left;
+    width: 25%;
+    min-width: 25%;
+    height: 75%;
+    min-height: 75%;
+    margin: 4%;
+    margin-left: 6%;
+    border: 1px solid $swblack;
+    padding: 1.5%;
+    font-family: helvetica neue, Helvetica, Arial, sans-serif;
+    background-color: $swcoal;
+    color: $swyellow;
+}
+
+.detailsCardContainer span {
+    font-weight: 700;
+}
+
+.detailsFooter {
+    text-align: center;
+}
+
+.detailsCardContainer button {
+    border: 1px solid $swyellow;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: $swyellow;
+    padding: .5rem 1rem;
+    font-size: .7rem;
+}
+
+.detailsCardContainer a:link {
+    color: $swyellow;
+    text-decoration: none;
+}
+
+.detailsCardContainer a:visited {
+    color: $swyellow;
+    text-decoration: none;
+}
+
+.detailsCardContainer a:hover {
+    color: $swgold;
+}
+
+.detailsCardContainer a:active {
+    color: $swgold;
+}
