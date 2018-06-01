@@ -48,7 +48,7 @@ class TableBody extends React.Component {
         return (
             <div className="tableContainer">
                 <table >
-                    <thead className="tableHeader">
+                    <thead id="tableHeader">
                         <tr>
                             <td >Name</td>
                             <td >Gender</td>

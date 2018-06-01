@@ -1,4 +1,3 @@
-
 // Variables:
 $swyellow: #ffe300;
 $swgold: #ffe10083;
@@ -9,45 +8,60 @@ $swgrey: #c3c3c3;
 $swblack: #000000;
 $swwhite: #ffffff;
 
-
-.tableHeader {
-    min-height: 2.4em;
-    font-size: 0.8em;
-    padding: 1%;
-    font-family: helvetica neue, Helvetica, Arial, sans-serif;
-    background-color: $swwhite;
-    color: $swdarkgrey;
-    border: solid 1px $swdarkgrey;
-    border-spacing: 0;
-}
-
+// Nesting table styles (flat structure)
 .tableContainer {
     font-size: 0.8em;
     font-family: helvetica neue, Helvetica, Arial, sans-serif;
-    color: $swyellow;
-    border-collapse: collapse;
     background-color: $swcoal;
+    table {
+        overflow: auto;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    thead {
+        overflow: auto;
+    }
+    tbody {
+        height: 400px;
+        overflow: auto;
+        color: $swyellow;
+    
+    td {
+        border: solid 1px $swgold; // color: $swyellow;
+        padding: 1em;
+    }
+    }
+    a:link {
+        color: $swyellow;
+        text-decoration: none;
+    }
+    a:visited {
+        color: $swyellow;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $swgold;
+    }
+    a:active {
+        color: $swgold;
+    }
+    button {
+        border: 1px solid $swyellow;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        color: $swyellow;
+        padding: .5rem 1rem;
+        font-size: .7rem;
+    }
 }
 
-.tableContainer table {
-    overflow: auto;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.tableContainer thead {
-    overflow: auto;
-}
-
-.tableContainer tbody {
-    height: 400px;
-    overflow: auto;
-}
-
-.tableContainer tbody td {
-    border: solid 1px $swgold;
-    color: $swyellow;
-    padding: 1em;
+#tableHeader {
+    font-size: 0.8em;
+    font-family: helvetica neue, Helvetica, Arial, sans-serif;
+    background-color: $swwhite;
+    color: $swblack;
+    
 }
 
 .filterBarContainer {
@@ -75,32 +89,4 @@ $swwhite: #ffffff;
 
 #filterButton {
     padding: 0.5%;
-}
-
-.tableContainer a:link {
-    color: $swyellow;
-    text-decoration: none;
-}
-
-.tableContainer a:visited {
-    color: $swyellow;
-    text-decoration: none;
-}
-
-.tableContainer a:hover {
-    color: $swgold;
-}
-
-.tableContainer a:active {
-    color: $swgold;
-}
-
-.tableContainer button {
-    border: 1px solid $swyellow;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    color: $swyellow;
-    padding: .5rem 1rem;
-    font-size: .7rem;
 }
