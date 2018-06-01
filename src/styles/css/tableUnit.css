@@ -15,6 +15,14 @@
     .tableContainer tbody td {
       border: solid 1px #ffe10083;
       padding: 1em; }
+  .tableContainer button {
+    border: 1px solid #ffe300;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: #ffe300;
+    padding: .5rem 1rem;
+    font-size: .7rem; }
   .tableContainer a:link {
     color: #ffe300;
     text-decoration: none; }
@@ -25,14 +33,6 @@
     color: #ffe10083; }
   .tableContainer a:active {
     color: #ffe10083; }
-  .tableContainer button {
-    border: 1px solid #ffe300;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    color: #ffe300;
-    padding: .5rem 1rem;
-    font-size: .7rem; }
 
 #tableHeader {
   font-size: 0.8em;

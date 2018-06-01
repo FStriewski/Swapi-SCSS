@@ -8,6 +8,26 @@ $swgrey: #c3c3c3;
 $swblack: #000000;
 $swwhite: #ffffff;
 
+@mixin links {
+    a:link {
+        color: $swyellow;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: $swyellow;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $swgold;
+    }
+
+    a:active {
+        color: $swgold;
+    }
+}
+
 // Nesting table styles (flat structure)
 .tableContainer {
     font-size: 0.8em;
@@ -31,20 +51,7 @@ $swwhite: #ffffff;
         padding: 1em;
     }
     }
-    a:link {
-        color: $swyellow;
-        text-decoration: none;
-    }
-    a:visited {
-        color: $swyellow;
-        text-decoration: none;
-    }
-    a:hover {
-        color: $swgold;
-    }
-    a:active {
-        color: $swgold;
-    }
+
     button {
         border: 1px solid $swyellow;
         background-color: Transparent;
@@ -54,6 +61,8 @@ $swwhite: #ffffff;
         padding: .5rem 1rem;
         font-size: .7rem;
     }
+
+    @include links
 }
 
 #tableHeader {
