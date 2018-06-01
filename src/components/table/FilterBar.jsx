@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { filterByName, filterByGender, filterBySpecies } from '../../actions/filter'
-import '../../styles/topBarUnit.css'
+import '../../styles/css/topBarUnit.css'
 
 
 class FilterBar extends React.Component {

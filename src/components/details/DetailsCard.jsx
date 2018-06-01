@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { fetchCharacter } from '../../actions/people'
 import { Link } from 'react-router-dom'
-import '../../styles/detailsUnit.css'
+import '../../styles/css/detailsUnit.css'
 
  class DetailsCard extends React.Component {
      static propTypes = {

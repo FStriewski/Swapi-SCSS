@@ -5,7 +5,7 @@ import { fetchAllPeople, fetchMorePeople } from '../../actions/people'
 import { fetchAllSpecies } from '../../actions/species'
 import { fetchAllPlanets } from '../../actions/planets'
 import { Link } from 'react-router-dom'
-import '../../styles/tableUnit.css'
+import '../../styles/css/tableUnit.css'
 
 
 class TableBody extends React.Component {
