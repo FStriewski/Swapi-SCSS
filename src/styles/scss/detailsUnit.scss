@@ -1,28 +1,5 @@
-// Variables:
-$swyellow: #ffe300;
-$swgold: #ffe10083;
-$swblue: #32383e;
-$swcoal: #333333;
-$swgrey: #c3c3c3;
-$swblack: #000000;
-$swwhite: #ffffff;
-
-@mixin links {
-    a:link {
-        color: $swyellow;
-        text-decoration: none;
-    }
-    a:visited {
-        color: $swyellow;
-        text-decoration: none;
-    }
-    a:hover {
-        color: $swgold;
-    }
-    a:active {
-        color: $swgold;
-    }
-}
+@import "#variables";
+@import "#mixins";
 
 .detailsCardContainer {
     float: left;
