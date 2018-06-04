@@ -5,7 +5,7 @@ import { fetchCharacter } from '../../actions/people'
 import { Link } from 'react-router-dom'
 import '../../styles/css/detailsUnit.css'
 
- class DetailsCard extends React.Component {
+ export class DetailsCard extends React.Component {
      static propTypes = {
          fetchCharacter: PropTypes.func.isRequired,
      }

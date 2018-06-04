@@ -11,4 +11,5 @@ describe('<FilterBar />', () => {
         expect(app).toHaveTagName('div')
     })
 
+
 })
