@@ -1,11 +1,11 @@
-import PlanetContainer from '../components/details/PlanetContainer'
+import {FilterBar} from '../components/table/FilterBar'
 
 import React from 'react'
 import { shallow } from 'enzyme'
 
 
-describe('<PlanetContainer />', () => {
-    const app = shallow(<PlanetContainer />)
+describe('<FilterBar />', () => {
+    const app = shallow(<FilterBar />)
 
     it('wraps everything in a div tag', () => {
         expect(app).toHaveTagName('div')

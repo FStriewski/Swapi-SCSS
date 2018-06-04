@@ -7,13 +7,13 @@ import { fetchAllPlanets } from '../../actions/planets'
 import { Link } from 'react-router-dom'
 import '../../styles/css/tableUnit.css'
 
-
-class TableBody extends React.Component {
+// Named export needed for testing:
+export class TableBody extends React.Component {
     static propTypes = {
-        fetchAllPeople: PropTypes.func.isRequired,
-        fetchAllSpecies: PropTypes.func.isRequired,
-        fetchAllPlanets: PropTypes.func.isRequired,
-        fetchMorePeople: PropTypes.func.isRequired,
+        fetchAllPeople: PropTypes.func,
+        fetchAllSpecies: PropTypes.func,
+        fetchAllPlanets: PropTypes.func,
+        fetchMorePeople: PropTypes.func,
     }
 
     componentWillMount() {

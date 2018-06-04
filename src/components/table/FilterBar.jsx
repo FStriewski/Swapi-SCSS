@@ -4,12 +4,12 @@ import PropTypes from 'prop-types'
 import { filterByName, filterByGender, filterBySpecies } from '../../actions/filter'
 import '../../styles/css/topBarUnit.css'
 
-
-class FilterBar extends React.Component {
+// Named export needed for testing
+export class FilterBar extends React.Component {
     static propTypes = {
-        filterByName: PropTypes.func.isRequired,
-        filterByGender: PropTypes.func.isRequired,
-        filterBySpecies: PropTypes.func.isRequired,
+        filterByName: PropTypes.func,
+        filterByGender: PropTypes.func,
+        filterBySpecies: PropTypes.func,
     }
 
     toggleVisibility = () => {
